@@ -87,6 +87,7 @@ public class SampleActionTest {
 		replay(request);
 		String result = action.execute(request);
 		verify(request);
+		
 
 		assertTrue("./WEB-INF/result.jsp".equals(result));
 	}
